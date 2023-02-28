@@ -1,0 +1,21 @@
+[tool.pdm]
+
+[project]
+name = "slims"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "bjhardcastle", email = "ben.hardcastle@alleninstitute.org"},
+]
+dependencies = [
+    "sqlalchemy>=2.0.4",
+    "ipykernel>=6.21.2",
+    "pandas @ git+https://github.com/pandas-dev/pandas.git",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0"]
+build-backend = "pdm.pep517.api"
